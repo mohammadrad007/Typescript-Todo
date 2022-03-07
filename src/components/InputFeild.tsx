@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./inputFeild.css";
 
-const InputFeild = () => {
+interface Props {
+  todo: string;
+  setTodo: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const InputFeild: React.FC<Props> = ({ todo, setTodo }) => {
   return (
     <form className="formInput">
       <input type="text" placeholder="Enter a task" className="inputBox" />
