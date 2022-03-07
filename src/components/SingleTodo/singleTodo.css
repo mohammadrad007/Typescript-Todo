@@ -12,6 +12,13 @@
   border: none;
   font-size: 1.3rem;
 }
+.todosTextDone {
+  flex: 1;
+  padding: 0.2rem;
+  border: none;
+  font-size: 1.3rem;
+  text-decoration: line-through;
+}
 .todosText:focus {
   outline: none;
 }
@@ -19,4 +26,15 @@
   margin-left: 0.7rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .singleTodoBox {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .singleTodoBox {
+    width: 100%;
+  }
 }
